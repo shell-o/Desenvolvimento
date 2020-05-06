@@ -8,4 +8,8 @@
     background-color: #009879;
     color: #ffffff;
     text-align: left;
+    font-weight: bold;
+}
+.content-table td{
+    padding: 12px 15px;
 }
