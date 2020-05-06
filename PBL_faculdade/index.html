@@ -12,14 +12,20 @@
             var nome = document.getElementById("nome");
             var senha = document.getElementById("pass");
         
-            if(nome.value.trim() == "" || senha.value.trim() == "")
-            {
-                alert("Preencha todos os campos!");
+            if(nome.value.trim() == ""){
+                //alert("Preencha o campo nome!");
+                nome.style.border = "solid 3px red";
+                document.getElementById("lblnome").style.visibility="visible";
                 return false;
-            }
-            else
-            {
+            }else if(senha.value.trim() == ""){
+                alert("Preencha o campo senha");
+                senha.style.border = "solid 3px red";
+                return false;
+            }else if(senha.value.trim().length<5){
+                alert("A senha é muito curta");
                 true;
+            }else{
+                return true;
             }
         }
     </script>
@@ -27,6 +33,7 @@
 <body>
     <form onsubmit="return validar()" action="inicio.html">
         <input id="nome" placeholder="Nome" type="text" />
+        <label id="lblnome" style="color: red; visibility: hidden;">Invalido</label><br><br>
         <input id="pass" placeholder="Senha" type="password"  />
         <br><br>
         <button type="submit">Iniciar</button>
