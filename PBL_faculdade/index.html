@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Tratativa de cores</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tela de login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-    <h1>Trabalhando com cores</h1>
-    <hr>
-    <p>Iniciando com HTML + CSS</p>
-    <p>Inserir uma tabela de cores</p>
+    <form onsubmit="return(validar)">
+        <input id="nome" placeholder="Nome" type="text"/>
+        <input id="pass" placeholder="Senha" type="password">
+        <br><br>
+        <button type="submit">Iniciar</button>
+    </form>
 </body>
 </html>
