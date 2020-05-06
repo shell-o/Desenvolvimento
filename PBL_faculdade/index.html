@@ -6,12 +6,28 @@
     <title>Tela de login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='_javascript/main.js'></script>
+    <script>
+        function validar()
+        {
+            var nome = document.getElementById("nome");
+            var senha = document.getElementById("pass");
+        
+            if(nome.value.trim() == "" || senha.value.trim() == "")
+            {
+                alert("Preencha todos os campos!");
+                return false;
+            }
+            else
+            {
+                true;
+            }
+        }
+    </script>
 </head>
 <body>
     <form onsubmit="return validar()" action="inicio.html">
-        <input id="nome" placeholder="Nome" type="text"/>
-        <input id="pass" placeholder="Senha" type="password">
+        <input id="nome" placeholder="Nome" type="text" />
+        <input id="pass" placeholder="Senha" type="password"  />
         <br><br>
         <button type="submit">Iniciar</button>
     </form>
