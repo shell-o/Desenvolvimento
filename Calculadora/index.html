@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/style.css">
+    <title>Calculadora</title>
+    <script>
+        function inserir(num){
+            document.form.textview.value=document.form.textview.value+num;
+        }
+        function igual(){
+            var exp = document.form.textview.value;
+                if(exp){
+                    document.form.textview.value = eval(exp);
+                }
+        }
+        function limpar(){
+            document.form.textview.value = "";
+        }
+        function voltar(){
+            var exp = document.form.textview.value;
+            document.form.textview.value = exp.substring(0,exp.length-1);
+        }
+    </script>
+</head>
+<body>
+    <div class="manin">
+        <form name="form">
+            <input class="textview" name="textview"><br>
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="c" onclick="limpar()"></td>
+                    <td><input class="button" type="button" value="<" onclick="voltar()"></td>
+                    <td><input class="button" type="button" value="/" onclick="inserir('/')"></td>
+                    <td><input class="button" type="button" value="x" onclick="inserir('*')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="inserir(7)"></td>
+                    <td><input class="button" type="button" value="8" onclick="inserir(8)"></td>
+                    <td><input class="button" type="button" value="9" onclick="inserir(9)"></td>
+                    <td><input class="button" type="button" value="-" onclick="inserir('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="inserir(4)"></td>
+                    <td><input class="button" type="button" value="5" onclick="inserir(5)"></td>
+                    <td><input class="button" type="button" value="6" onclick="inserir(6)"></td>
+                    <td><input class="button" type="button" value="+" onclick="inserir('+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="inserir(1)"></td>
+                    <td><input class="button" type="button" value="2" onclick="inserir(2)"></td>
+                    <td><input class="button" type="button" value="3" onclick="inserir(3)"></td>
+                    <td><input class="button" type="button" value="=" onclick="igual()"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="0" onclick="inserir(0)"></td>
+                    <td><input class="button" type="button" value="." onclick="inserir('.')"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
