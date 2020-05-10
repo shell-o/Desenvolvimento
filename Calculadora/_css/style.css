@@ -3,15 +3,27 @@
     padding: 0;
 }
 .button{
-    width: 50px;
+    width: 52px;
     height: 50px;
     font-size: 25pt;
     margin: 2px;
     cursor: pointer;
+    background: #607d8b;
+    border: none;
+    color:white;
 }
 .textview{
-    width: 202px;
+    width: 207px;
     margin: 5px;
     font-size: 20pt;
-    padding: 5px;
+    padding: 8px;
+    border: white;
+    color: #607d8b;
+}
+.menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    background: orange;
 }
