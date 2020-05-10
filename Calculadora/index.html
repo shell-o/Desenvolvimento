@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="_css/style.css">
     <title>Calculadora</title>
     <script>
+        //Não tem a necessidade do uso ";" por questão de hábito vou utilizar
         function inserir(num){
             document.form.textview.value=document.form.textview.value+num;
         }
@@ -51,10 +52,10 @@
                     <td><input class="button" type="button" value="1" onclick="inserir(1)"></td>
                     <td><input class="button" type="button" value="2" onclick="inserir(2)"></td>
                     <td><input class="button" type="button" value="3" onclick="inserir(3)"></td>
-                    <td><input class="button" type="button" value="=" onclick="igual()"></td>
+                    <td rowspan="5"><input class="button" style="height: 106px" type="button" value="=" onclick="igual()"></td>
                 </tr>
                 <tr>
-                    <td><input class="button" type="button" value="0" onclick="inserir(0)"></td>
+                    <td colspan="2"><input class="button" style="width: 108px;" type="button" value="0" onclick="inserir(0)"></td>
                     <td><input class="button" type="button" value="." onclick="inserir('.')"></td>
                 </tr>
             </table>
