@@ -1,0 +1,31 @@
+*{
+    font-family: auto;
+}
+table, th, td{
+    font-size: 20pt;
+    border-style: solid;
+    border-width: 1px;
+    border-color: silver;
+    padding: 4px;
+}
+td{
+    text-align: center;
+}
+.vermelho{
+    background-color: red;
+}
+.verde{
+    background-color:#18e218;
+}
+.azul{
+    background-color: blue;
+}
+.amarelo{
+    background-color: yellow;
+}
+.azul-claro{
+    background-color: #00bcd4;
+}
+.magenta{
+    background-color: magenta;
+}
