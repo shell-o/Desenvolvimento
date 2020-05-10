@@ -7,6 +7,7 @@ table, th, td{
     border-width: 1px;
     border-color: silver;
     padding: 4px;
+    width: inherit;
 }
 td{
     text-align: center;
@@ -28,4 +29,47 @@ td{
 }
 .magenta{
     background-color: magenta;
+}
+/*Inserir o efeito onmouse*/
+.vermelho:hover{
+    color:white;
+    text-decoration: underline;
+    text-align: center;
+    font: bold;
+    font-size: smaller;
+}
+.verde:hover{
+    color:white;
+    text-decoration: underline;
+    text-align: center;
+    font: bold;
+    font-size: smaller;
+}
+.azul:hover{
+    color:white;
+    text-decoration: underline;
+    text-align: center;
+    font: bold;
+    font-size: smaller;
+}
+.amarelo:hover{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font: bold;
+    font-size: smaller;
+}
+.azul-claro:hover{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font: bold;
+    font-size: smaller;
+}
+.magenta:hover{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font: bold;
+    font-size: smaller;
 }
