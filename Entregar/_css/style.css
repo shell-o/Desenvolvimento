@@ -37,6 +37,7 @@ td{
     text-align: center;
     font: bold;
     font-size: smaller;
+    width: auto;
 }
 .verde:hover{
     color:white;
@@ -44,6 +45,7 @@ td{
     text-align: center;
     font: bold;
     font-size: smaller;
+    width: auto;
 }
 .azul:hover{
     color:white;
