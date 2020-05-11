@@ -8,22 +8,27 @@
     font-size: 25pt;
     margin: 2px;
     cursor: pointer;
-    background: #607d8b;
-    border: none;
-    color:white;
+    background: #260a50;
+    border: 1px solid rgba(64, 64, 77, 0.8);
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    outline: none;
 }
 .textview{
     width: 207px;
     margin: 5px;
-    font-size: 20pt;
+    font-size: 15pt;
     padding: 8px;
-    border: white;
+    border-color: rgba(12, 15, 195, 0.8);
     color: #607d8b;
 }
 .menu{
+    border: 1px solid rgba(12, 15, 195, 0.8);
     position: absolute;
+    background: #b6afea;
+    padding: 20px;
     top: 50%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
-    background: orange;
 }
